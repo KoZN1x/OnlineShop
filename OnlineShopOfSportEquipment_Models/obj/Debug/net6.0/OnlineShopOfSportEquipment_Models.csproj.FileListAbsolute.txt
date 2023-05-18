@@ -1,0 +1,12 @@
+E:\Programms\OnlineShopOfSportEquipment_Models\bin\Debug\net6.0\OnlineShopOfSportEquipment_Models.deps.json
+E:\Programms\OnlineShopOfSportEquipment_Models\bin\Debug\net6.0\OnlineShopOfSportEquipment_Models.dll
+E:\Programms\OnlineShopOfSportEquipment_Models\bin\Debug\net6.0\OnlineShopOfSportEquipment_Models.pdb
+E:\Programms\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\OnlineShopOfSportEquipment_Models.csproj.AssemblyReference.cache
+E:\Programms\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\OnlineShopOfSportEquipment_Models.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programms\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\OnlineShopOfSportEquipment_Models.AssemblyInfoInputs.cache
+E:\Programms\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\OnlineShopOfSportEquipment_Models.AssemblyInfo.cs
+E:\Programms\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\OnlineShopOfSportEquipment_Models.csproj.CoreCompileInputs.cache
+E:\Programms\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\OnlineShopOfSportEquipment_Models.dll
+E:\Programms\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\refint\OnlineShopOfSportEquipment_Models.dll
+E:\Programms\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\OnlineShopOfSportEquipment_Models.pdb
+E:\Programms\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\ref\OnlineShopOfSportEquipment_Models.dll
