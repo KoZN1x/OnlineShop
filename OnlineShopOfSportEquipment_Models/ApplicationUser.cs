@@ -19,20 +19,20 @@ namespace OnlineShopOfSportEquipment_Models
         [NotMapped]
         [DataType(DataType.PostalCode)]
         public string? PostalCode { get; set; }
-        [NotMapped]
-        [CreditCard]
-        //[DataType(DataType.CreditCard)]
-        [Required]
-        public int? CreditCardNumber { get; set; }
-        [NotMapped]
-        [Required]
-        [DataType(DataType.Date)]
-        //[DisplayFormat(DataFormatString = "{MM/yy}", ApplyFormatInEditMode = true)]
-        public DateTime CardDate { get; set; }
-        [NotMapped]
-        [Required]
-        [Range(100, 999)]
-        public int CVV { get; set; }
+        //[NotMapped]
+        //[CreditCard]
+        ////[DataType(DataType.CreditCard)]
+        //[Required]
+        //public int? CreditCardNumber { get; set; }
+        //[NotMapped]
+        //[Required]
+        //[DataType(DataType.Date)]
+        ////[DisplayFormat(DataFormatString = "{MM/yy}", ApplyFormatInEditMode = true)]
+        //public DateTime CardDate { get; set; }
+        //[NotMapped]
+        //[Required]
+        //[Range(100, 999)]
+        //public int CVV { get; set; }
 
     }
 }
