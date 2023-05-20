@@ -10,6 +10,7 @@ namespace OnlineShopOfSportEquipment_Models.ViewModels
         {
             Product = new Product();
         }
+
         
     }
 }

@@ -5,6 +5,10 @@ namespace OnlineShopOfSportEquipment_Models
 {
     public class Product
     {
+        public Product()
+        {
+            TempCount = 1;
+        }
         [Key]
         public Guid Id { get; set; }
         [Required]
@@ -14,7 +18,7 @@ namespace OnlineShopOfSportEquipment_Models
         public string? Description { get; set; }
         [Required]
         [Range(1, int.MaxValue)]
-        public decimal? Price { get; set;}
+        public decimal Price { get; set; } 
         public string? Image { get; set; }
         [Display(Name = "Category Type")]
         public Guid CategoryId { get; set; }
@@ -24,5 +28,11 @@ namespace OnlineShopOfSportEquipment_Models
         public Guid TrainingTypeId { get; set; }
         [ForeignKey("TrainingTypeId")]
         public virtual TrainingType? TrainingType { get; set; }
+        [Required]
+        [Range(0, int.MaxValue)]
+        public uint CountInStock { get; set; }
+        [Range(1, 100)]
+        [NotMapped]
+        public uint TempCount { get; set; }
     }
 }

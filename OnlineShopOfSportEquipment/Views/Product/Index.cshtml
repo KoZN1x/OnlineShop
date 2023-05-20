@@ -41,9 +41,10 @@
                 {
                     <tr>
                         <td width="30%">@obj.Name</td>
-                        <td width="10%">@obj.Price</td>
+                        <td width="10%">@string.Format("{0:c0}", obj.Price)</td>
                         <td width="20%">@obj.Category!.Name</td>
                         <td width="20%">@obj.TrainingType!.Name</td>
+                        <td width="10%">@obj.CountInStock</td>
                         <td class="text-right">
                             <div class="w-25 btn-group" role="group">
                                 <a  asp-route-Id="@obj.Id" asp-action="Upsert" class="btn btn-primary mx-2">

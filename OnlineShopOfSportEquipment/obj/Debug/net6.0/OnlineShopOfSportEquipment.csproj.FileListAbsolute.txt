@@ -286,3 +286,5 @@ E:\Programms\OnlineShopOfSportEquipment\bin\Debug\net6.0\OnlineShopOfSportEquipm
 E:\Programms\OnlineShopOfSportEquipment\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 E:\Programms\OnlineShopOfSportEquipment\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 E:\Programms\OnlineShopOfSportEquipment\bin\Debug\net6.0\ServiceStack.Interfaces.dll
+E:\Programms\OnlineShopOfSportEquipment\bin\Debug\net6.0\Syncfusion.EJ2.dll
+E:\Programms\OnlineShopOfSportEquipment\bin\Debug\net6.0\Syncfusion.Licensing.dll

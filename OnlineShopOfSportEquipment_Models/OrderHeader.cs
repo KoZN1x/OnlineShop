@@ -8,17 +8,26 @@ namespace OnlineShopOfSportEquipment_Models
         [Key]
         public int Id { get; set; }
         public string? ApplicationUserId { get; set; }
+        public decimal FinalOrderTotal { get; set; }
         [ForeignKey(nameof(ApplicationUserId))]
         public virtual ApplicationUser? User { get; set; }
         public DateTime OrderDate { get; set; }
-        [Required(ErrorMessage = "Phone number is required!")]
+        [Required]
         [DataType(DataType.PhoneNumber)]
         public string? PhoneNumber { get; set; }
-        [Required(ErrorMessage = "Address is required!")]
+        [Required]
         public string? Address { get; set; }
-        [Required(ErrorMessage = "Email is required!")]
+        [Required]
+        public string? City { get; set; }
+        [Required]
+        public string? State { get; set; }
+        [DataType(DataType.PostalCode)]
+        public string? PostalCode { get; set; }
+        [Required]
         [DataType(DataType.EmailAddress)]
         public string? Email { get; set; }
         public string? FullName { get; set; }
+        [Required]
+        public string? OrderStatus { get; set; }
     }
 }

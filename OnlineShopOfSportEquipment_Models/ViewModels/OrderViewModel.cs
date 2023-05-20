@@ -8,7 +8,7 @@ namespace OnlineShopOfSportEquipment_Models.ViewModels
 {
     public class OrderViewModel
     {
-        public OrderHeader? orderHeader {  get; set; }
-        public IEnumerable<OrderDetail>? orderDetail { get; set; }
+        public OrderHeader? OrderHeader {  get; set; }
+        public IEnumerable<OrderDetail>? OrderDetail { get; set; }
     }
 }

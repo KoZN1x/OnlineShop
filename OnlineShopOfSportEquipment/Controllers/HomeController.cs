@@ -58,7 +58,7 @@ namespace OnlineShopOfSportEquipment.Controllers
         }
 
         [HttpPost, ActionName("Details")]
-        public IActionResult DetailsPost(Guid? id)
+        public IActionResult DetailsPost(Guid? id, DetailsViewModel detailsViewModel)
         {
             var shoppingCartList = new List<ShoppingCart>();
             if (HttpContext.Session.Get<IEnumerable<ShoppingCart>>(WC.SessionCart) != null 
@@ -66,7 +66,7 @@ namespace OnlineShopOfSportEquipment.Controllers
             {
                 shoppingCartList = HttpContext.Session.Get<List<ShoppingCart>>(WC.SessionCart);
             }
-            shoppingCartList!.Add(new ShoppingCart { ProductId = (Guid)id! });
+            shoppingCartList!.Add(new ShoppingCart { ProductId = (Guid)id!, ProductCount = detailsViewModel.Product!.TempCount });
             HttpContext.Session.Set(WC.SessionCart, shoppingCartList);
             return RedirectToAction(nameof(Index));
         }
