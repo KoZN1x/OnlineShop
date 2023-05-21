@@ -1,9 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Internal;
-using OnlineShopOfSportEquipment_Data;
 using OnlineShopOfSportEquipment_Models;
 using OnlineShopOfSportEquipment_Utility;
 using OnlineShopOfSportEquipment_Models.ViewModels;
@@ -23,10 +19,8 @@ namespace OnlineShopOfSportEquipment.Controllers
         }
         public IActionResult Index()
         {
-
             IEnumerable<Product> productList = _service.GetAll(includeProperties: "Category,TrainingType");
             return View(productList);
-
         }
         //GET - UPSERT
         public IActionResult Upsert(Guid? id)

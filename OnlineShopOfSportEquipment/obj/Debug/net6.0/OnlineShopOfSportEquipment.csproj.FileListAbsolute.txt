@@ -288,3 +288,12 @@ E:\Programms\OnlineShopOfSportEquipment\bin\Debug\net6.0\Microsoft.EntityFramewo
 E:\Programms\OnlineShopOfSportEquipment\bin\Debug\net6.0\ServiceStack.Interfaces.dll
 E:\Programms\OnlineShopOfSportEquipment\bin\Debug\net6.0\Syncfusion.EJ2.dll
 E:\Programms\OnlineShopOfSportEquipment\bin\Debug\net6.0\Syncfusion.Licensing.dll
+E:\Programms\OnlineShopOfSportEquipment\bin\Debug\net6.0\NUnit3.TestAdapter.dll
+E:\Programms\OnlineShopOfSportEquipment\bin\Debug\net6.0\NUnit3.TestAdapter.pdb
+E:\Programms\OnlineShopOfSportEquipment\bin\Debug\net6.0\nunit.engine.dll
+E:\Programms\OnlineShopOfSportEquipment\bin\Debug\net6.0\nunit.engine.api.dll
+E:\Programms\OnlineShopOfSportEquipment\bin\Debug\net6.0\nunit.engine.core.dll
+E:\Programms\OnlineShopOfSportEquipment\bin\Debug\net6.0\testcentric.engine.metadata.dll
+E:\Programms\OnlineShopOfSportEquipment\bin\Debug\net6.0\Castle.Core.dll
+E:\Programms\OnlineShopOfSportEquipment\bin\Debug\net6.0\Moq.dll
+E:\Programms\OnlineShopOfSportEquipment\bin\Debug\net6.0\nunit.framework.dll

@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineShopOfSportEquipment_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineShopOfSportEquipment_Models", "..\OnlineShopOfSportEquipment_Models\OnlineShopOfSportEquipment_Models.csproj", "{AD2AFE9E-8BA7-4303-A117-A1D06D05DE0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShopOfSportEquipment_Data", "..\OnlineShopOfSportEquipment_Data\OnlineShopOfSportEquipment_Data.csproj", "{EDAC35E5-1101-4EF2-936C-EC015C9CC49F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineShopOfSportEquipment_Data", "..\OnlineShopOfSportEquipment_Data\OnlineShopOfSportEquipment_Data.csproj", "{EDAC35E5-1101-4EF2-936C-EC015C9CC49F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

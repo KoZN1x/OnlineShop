@@ -31,7 +31,7 @@ namespace OnlineShopOfSportEquipment_Models
         public int CardValidMonth { get; set; }
         [NotMapped]
         [Required]
-        [Range(19, 27)]
+        [Range(23, 33)]
         public int CardValidYear { get; set; }
         [NotMapped]
         [Required]
@@ -40,6 +40,7 @@ namespace OnlineShopOfSportEquipment_Models
 
         private bool isValidCardNumberLength(string creditCardNumber)
         {
+            creditCardNumber = creditCardNumber.Replace(" ", "");
             if (creditCardNumber.Length == 16)
             {
                 return LunaValidation(creditCardNumber);
