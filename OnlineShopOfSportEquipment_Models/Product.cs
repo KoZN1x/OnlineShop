@@ -31,7 +31,7 @@ namespace OnlineShopOfSportEquipment_Models
         [Required]
         [Range(0, int.MaxValue)]
         public uint CountInStock { get; set; }
-        [Range(1, 100)]
+        [Range(1, 100, ErrorMessage = "Count must  be greater than 0!")]
         [NotMapped]
         public uint TempCount { get; set; }
     }

@@ -10,7 +10,7 @@
                         Order summary
                     </div>
                     <div class="col-6 text-end">
-                        <a class="btn btn-outline-info btn-sm">Back to Cart</a>
+                        <a class="btn btn-outline-info btn-sm" asp-action="Index">Back to Cart</a>
                     </div>
                 </div>
                 <div class="card-body">
@@ -99,6 +99,8 @@
                                             <input type="hidden" asp-for="@Model.ProductList![i].Name">
                                             <input type="hidden" asp-for="@Model.ProductList![i].TempCount">
                                             <input type="hidden" asp-for="@Model.ProductList![i].Price">
+                                            <input type="hidden" asp-for="@Model.ProductList![i].CountInStock">
+                                            <input type="hidden" asp-for="@Model.ApplicationUser!.FullName">
                                             <li class="list-group-item d-flex justify-content-between">
                                                 <div>
                                                     <h6 class="my-0">@Model.ProductList![i].Name</h6>
@@ -113,39 +115,42 @@
                                             <strong class="text-info">@string.Format("{0:C0}", orderTotal)</strong>
                                         </li> 
                                     </ul>
-                                    @*<div class="col-12 col-lg-7 pb-4">
-                                        <div class="row my-1">
-                                            <div class="col-9">
+                                    <div class="col-12 col-lg-7 pb-4">
+                                        <div class="row my-auto">
+                                            <div class="col-12">
                                                 <label>Credit Card Number</label>
                                             </div>
                                             <br />
-                                            <div class="col-9">
-                                                <input asp-for="ApplicationUser!.CreditCardNumber" required class="form-control" />
-                                                <span asp-validation-for="ApplicationUser!.CreditCardNumber" class="text-danger"></span>
+                                            <div class="col-12">
+                                                <input asp-for="ApplicationUser!.CreditCard!.CreditCardNumber" required class="form-control" />
+                                                <span asp-validation-for="ApplicationUser!.CreditCard!.CreditCardNumber" class="text-danger"></span>
                                             </div>
                                         </div>
-                                        <div class="row my-1">
+                                        <div class="row my-auto">
                                             <div class="col-6">
                                                 <label>Card Date</label>
                                             </div>
                                             <br />
-                                            <div class="col-3">
-                                                <input asp-for="ApplicationUser!.CardDate" required class="form-control" />
-                                                <span asp-validation-for="ApplicationUser!.CardDate" class="text-danger"></span>
+                                            <div class="col-6">
+                                                <input asp-for="ApplicationUser!.CreditCard!.CardValidMonth" required class="form-control" />
+                                                /
+                                                <input asp-for="ApplicationUser!.CreditCard!.CardValidYear" required class="form-control" />
+                                                <span asp-validation-for="ApplicationUser!.CreditCard!.CardValidMonth" class="text-danger"></span>
+                                                <span asp-validation-for="ApplicationUser!.CreditCard!.CardValidYear" class="text-danger"></span>
                                             </div>
                                         </div>
-                                        <div class="row my-1">
+                                        <div class="row my-auto">
                                             <div class="col-6">
                                                 <label>CVV</label>
                                             </div>
                                             <br />
-                                            <div class="col-3">
-                                                <input asp-for="ApplicationUser!.CVV" required class="form-control" />
-                                                <span asp-validation-for="ApplicationUser!.CVV" class="text-danger"></span>
+                                            <div class="col-5">
+                                                <input asp-for="ApplicationUser!.CreditCard!.CVV" required class="form-control" />
+                                                <span asp-validation-for="ApplicationUser!.CreditCard!.CVV" class="text-danger"></span>
                                             </div>
                                         </div>
 
-                                    </div>*@
+                                    </div>
                                 </div>
                             </div>
                         </div>
