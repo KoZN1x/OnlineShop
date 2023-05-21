@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using OnlineShopOfSportEquipment_Data.Services.IService;
-using OnlineShopOfSportEquipment_Models;
 using OnlineShopOfSportEquipment_Models.ViewModels;
 using OnlineShopOfSportEquipment_Utility;
 

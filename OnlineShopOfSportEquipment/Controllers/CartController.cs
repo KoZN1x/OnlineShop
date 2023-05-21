@@ -1,12 +1,11 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using OnlineShopOfSportEquipment_Data;
-using OnlineShopOfSportEquipment_Utility;
-using OnlineShopOfSportEquipment_Models.ViewModels;
-using System.Security.Claims;
-using OnlineShopOfSportEquipment_Models;
+using OnlineShopOfSportEquipment.Services;
 using OnlineShopOfSportEquipment_Data.Services.IService;
-using System.Net;
+using OnlineShopOfSportEquipment_Models;
+using OnlineShopOfSportEquipment_Models.ViewModels;
+using OnlineShopOfSportEquipment_Utility;
+using System.Security.Claims;
 
 namespace OnlineShopOfSportEquipment.Controllers
 {
@@ -99,56 +98,51 @@ namespace OnlineShopOfSportEquipment.Controllers
         {
             var claimsIdentity = (ClaimsIdentity)User.Identity!;
             var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                var orderTotal = (decimal)0.0;
-                foreach (var product in ProductUserViewModel!.ProductList!)
-                {
-                    orderTotal += product.Price * product.TempCount;
-                    if (product.CountInStock > product.TempCount)
-                    {
-                        product.CountInStock -= product.TempCount;
-                    }
-                    else
-                    {
-                        ErrorViewModel error = new ErrorViewModel()
-                        {
-                            RequestId = "Not enough goods in stock!"
-                        };
-                        return View("Error", error);
-                    }
-                }
-                var orderHeader = new OrderHeader()
-                {
-                    ApplicationUserId = claim!.Value,
-                    FullName = productUserViewModel.ApplicationUser!.FullName,
-                    OrderDate = DateTime.Now,
-                    Email = productUserViewModel.ApplicationUser!.Email,
-                    PhoneNumber = productUserViewModel.ApplicationUser!.PhoneNumber,
-                    Address = productUserViewModel.ApplicationUser!.StreetAddress,
-                    City = productUserViewModel.ApplicationUser!.City,
-                    State = productUserViewModel.ApplicationUser!.State,
-                    PostalCode = productUserViewModel.ApplicationUser!.PostalCode,
-                    OrderStatus = WC.StatusActive,
-                    FinalOrderTotal = orderTotal
-                };
-                _orderHeaderService.Add(orderHeader);
-                _orderHeaderService.Save();
-                foreach (var product in ProductUserViewModel!.ProductList!)
-                {
-                    OrderDetail orderDetail = new OrderDetail()
-                    {
-                        OrderHeaderId = orderHeader.Id,
-                        ProductId = product.Id,
-                        Count = product.TempCount,
-                        Price = product.Price,
-                    };
-                    _orderDetailService.Add(orderDetail);
-                }
-                _orderDetailService.Save();
-                return RedirectToAction(nameof(OrderConfirmation), new { id = orderHeader.Id });
+                return RedirectToAction(nameof(Index));
             }
-            return RedirectToAction(nameof(Index));
+            foreach (var product in ProductUserViewModel!.ProductList!)
+            {
+                if (product.CountInStock < product.TempCount)
+                {
+                    ErrorViewModel error = new ErrorViewModel()
+                    {
+                        RequestId = "Not enough goods in stock!"
+                    };
+                    return View("Error", error);
+                }
+            }
+            var orderTotal = OrderTotalCounter.Count(ProductUserViewModel);
+            var orderHeader = new OrderHeader()
+            {
+                ApplicationUserId = claim!.Value,
+                FullName = productUserViewModel.ApplicationUser!.FullName,
+                OrderDate = DateTime.Now,
+                Email = productUserViewModel.ApplicationUser!.Email,
+                PhoneNumber = productUserViewModel.ApplicationUser!.PhoneNumber,
+                Address = productUserViewModel.ApplicationUser!.StreetAddress,
+                City = productUserViewModel.ApplicationUser!.City,
+                State = productUserViewModel.ApplicationUser!.State,
+                PostalCode = productUserViewModel.ApplicationUser!.PostalCode,
+                OrderStatus = WC.StatusActive,
+                FinalOrderTotal = orderTotal
+            };
+            _orderHeaderService.Add(orderHeader);
+            _orderHeaderService.Save();
+            foreach (var product in ProductUserViewModel!.ProductList!)
+            {
+                OrderDetail orderDetail = new OrderDetail()
+                {
+                    OrderHeaderId = orderHeader.Id,
+                    ProductId = product.Id,
+                    Count = product.TempCount,
+                    Price = product.Price,
+                };
+                _orderDetailService.Add(orderDetail);
+            }
+            _orderDetailService.Save();
+            return RedirectToAction(nameof(OrderConfirmation), new { id = orderHeader.Id });
         }
 
         public IActionResult OrderConfirmation(int id = 0)

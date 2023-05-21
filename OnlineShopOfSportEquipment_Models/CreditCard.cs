@@ -11,6 +11,7 @@ namespace OnlineShopOfSportEquipment_Models
     public class CreditCard
     {
         private string cardValue = "";
+
         [NotMapped]
         [CreditCard]
         [Required]
@@ -25,14 +26,17 @@ namespace OnlineShopOfSportEquipment_Models
                 }
             }
         }
+
         [NotMapped]
         [Required]
         [Range(1, 12)]
         public int CardValidMonth { get; set; }
+
         [NotMapped]
         [Required]
         [Range(23, 33)]
         public int CardValidYear { get; set; }
+
         [NotMapped]
         [Required]
         [Range(100, 999)]

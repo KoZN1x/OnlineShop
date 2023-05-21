@@ -1,11 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using OnlineShopOfSportEquipment_Data;
+using OnlineShopOfSportEquipment_Data.Services.IService;
 using OnlineShopOfSportEquipment_Models;
+using OnlineShopOfSportEquipment_Models.ViewModels;
 using OnlineShopOfSportEquipment_Utility;
 using System.Diagnostics;
-using OnlineShopOfSportEquipment_Models.ViewModels;
-using OnlineShopOfSportEquipment_Data.Services.IService;
 
 namespace OnlineShopOfSportEquipment.Controllers
 {

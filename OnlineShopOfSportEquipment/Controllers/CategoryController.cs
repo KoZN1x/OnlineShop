@@ -1,8 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Internal;
-using OnlineShopOfSportEquipment_Data;
 using OnlineShopOfSportEquipment_Data.Services.IService;
 using OnlineShopOfSportEquipment_Models;
 using OnlineShopOfSportEquipment_Utility;
@@ -19,10 +16,8 @@ namespace OnlineShopOfSportEquipment.Controllers
         }
         public IActionResult Index()
         {
-
             IEnumerable<Category> objList = _service.GetAll();
             return View(objList);
-
         }
         //GET - CREATE
         public IActionResult Create()
@@ -42,6 +37,7 @@ namespace OnlineShopOfSportEquipment.Controllers
             }
             return RedirectToAction("Index");
         }
+
         //GET - EDIT
         public IActionResult Edit(Guid? id)
         {
@@ -57,6 +53,7 @@ namespace OnlineShopOfSportEquipment.Controllers
             }
             else return NotFound();
         }
+
         //POST - EDIT
         [HttpPost]
         [ValidateAntiForgeryToken]

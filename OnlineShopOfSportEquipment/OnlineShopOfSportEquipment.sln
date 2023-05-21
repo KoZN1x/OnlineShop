@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineShopOfSportEquipment_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineShopOfSportEquipment_Data", "..\OnlineShopOfSportEquipment_Data\OnlineShopOfSportEquipment_Data.csproj", "{EDAC35E5-1101-4EF2-936C-EC015C9CC49F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShopOfSportEquipment_Tests", "..\OnlineShopOfSportEquipment_Tests\OnlineShopOfSportEquipment_Tests.csproj", "{C97B7DCB-04FA-4D5D-BA22-91157CA76AA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{EDAC35E5-1101-4EF2-936C-EC015C9CC49F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDAC35E5-1101-4EF2-936C-EC015C9CC49F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDAC35E5-1101-4EF2-936C-EC015C9CC49F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C97B7DCB-04FA-4D5D-BA22-91157CA76AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C97B7DCB-04FA-4D5D-BA22-91157CA76AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C97B7DCB-04FA-4D5D-BA22-91157CA76AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C97B7DCB-04FA-4D5D-BA22-91157CA76AA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
