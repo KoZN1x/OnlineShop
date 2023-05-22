@@ -43,34 +43,34 @@ namespace OnlineShopOfSportEquipment.Controllers
         }
 
         [HttpPost]
-        public IActionResult StartProcessing()
+        public async Task<IActionResult> StartProcessing()
         {
             var orderHeader = _orderHeaderService.FirstOrDefault(x => x.Id == orderViewModel!.OrderHeader!.Id);
             orderHeader.OrderStatus = WC.StatusProcessing;
-            _orderHeaderService.Save();
+            await _orderHeaderService.SaveAsync();
             return RedirectToAction(nameof(Index));
         }
 
         [HttpPost]
-        public IActionResult CompleteOrder()
+        public async Task<IActionResult> CompleteOrder()
         {
             var orderHeader = _orderHeaderService.FirstOrDefault(x => x.Id == orderViewModel!.OrderHeader!.Id);
             orderHeader.OrderStatus = WC.StatusCompleted;
-            _orderHeaderService.Save();
+            await _orderHeaderService.SaveAsync();
             return RedirectToAction(nameof(Index));
         }
 
         [HttpPost]
-        public IActionResult RemoveOrder()
+        public async Task<IActionResult> RemoveOrder()
         {
             var orderHeader = _orderHeaderService.FirstOrDefault(x => x.Id == orderViewModel!.OrderHeader!.Id);
             _orderHeaderService.Remove(orderHeader);
-            _orderHeaderService.Save();
+            await _orderHeaderService.SaveAsync();
             return RedirectToAction(nameof(Index));
         }
 
         [HttpPost]
-        public IActionResult UpdateOrderDetails()
+        public async Task<IActionResult> UpdateOrderDetails()
         {
             var orderHeaderFromDb = _orderHeaderService.FirstOrDefault(x => x.Id == orderViewModel!.OrderHeader!.Id);
             orderHeaderFromDb.FullName = orderViewModel!.OrderHeader!.FullName;
@@ -80,7 +80,7 @@ namespace OnlineShopOfSportEquipment.Controllers
             orderHeaderFromDb.State = orderViewModel!.OrderHeader!.State;
             orderHeaderFromDb.PostalCode = orderViewModel!.OrderHeader!.PostalCode;
             orderHeaderFromDb.Email = orderViewModel!.OrderHeader!.Email;
-            _orderHeaderService.Save();
+            await _orderHeaderService.SaveAsync();
             return RedirectToAction("Details", "Order", new { id = orderHeaderFromDb.Id});
         }
     }

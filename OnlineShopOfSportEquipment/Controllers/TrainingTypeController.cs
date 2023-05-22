@@ -32,12 +32,12 @@ namespace OnlineShopOfSportEquipment.Controllers
         //POST - CREATE
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(TrainingType trainingType)
+        public async Task<IActionResult> Create(TrainingType trainingType)
         {
             if (ModelState.IsValid)
             {
-                _service.Add(trainingType);
-                _service.Save();
+                await _service.AddAsync(trainingType);
+                await _service.SaveAsync();
             }
             return RedirectToAction("Index");
         }
@@ -60,12 +60,12 @@ namespace OnlineShopOfSportEquipment.Controllers
         //POST - EDIT
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(TrainingType trainingType)
+        public async Task<IActionResult> Edit(TrainingType trainingType)
         {
             if (ModelState.IsValid)
             {
                 _service.Update(trainingType);
-                _service.Save();
+                await _service.SaveAsync();
             }
             return RedirectToAction("Index");
         }
@@ -88,13 +88,13 @@ namespace OnlineShopOfSportEquipment.Controllers
         //POST - DELETE
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult DeletePost(Guid? id)
+        public async Task<IActionResult> DeletePost(Guid? id)
         {
             var obj = _service.Find(id.GetValueOrDefault());
             if (obj != null)
             {
                 _service.Remove(obj);
-                _service.Save();
+                await _service.SaveAsync();
                 return RedirectToAction("Index");
             }
             else return NotFound();

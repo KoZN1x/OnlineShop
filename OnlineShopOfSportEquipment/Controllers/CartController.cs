@@ -94,7 +94,7 @@ namespace OnlineShopOfSportEquipment.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [ActionName("Summary")]
-        public IActionResult SummaryPost(ProductUserViewModel productUserViewModel)
+        public async Task<IActionResult> SummaryPost(ProductUserViewModel productUserViewModel)
         {
             var claimsIdentity = (ClaimsIdentity)User.Identity!;
             var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
@@ -128,8 +128,8 @@ namespace OnlineShopOfSportEquipment.Controllers
                 OrderStatus = WC.StatusActive,
                 FinalOrderTotal = orderTotal
             };
-            _orderHeaderService.Add(orderHeader);
-            _orderHeaderService.Save();
+            await _orderHeaderService.AddAsync(orderHeader);
+            await _orderHeaderService.SaveAsync();
             foreach (var product in ProductUserViewModel!.ProductList!)
             {
                 OrderDetail orderDetail = new OrderDetail()
@@ -139,9 +139,9 @@ namespace OnlineShopOfSportEquipment.Controllers
                     Count = product.TempCount,
                     Price = product.Price,
                 };
-                _orderDetailService.Add(orderDetail);
+                await _orderDetailService.AddAsync(orderDetail);
             }
-            _orderDetailService.Save();
+            await _orderDetailService.SaveAsync();
             return RedirectToAction(nameof(OrderConfirmation), new { id = orderHeader.Id });
         }
 

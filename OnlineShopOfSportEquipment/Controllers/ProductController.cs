@@ -49,7 +49,7 @@ namespace OnlineShopOfSportEquipment.Controllers
         //POST - Upsert
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Upsert(ProductViewModel productViewModel)
+        public async Task<IActionResult> Upsert(ProductViewModel productViewModel)
         {
             if (ModelState.IsValid)
             {
@@ -68,8 +68,8 @@ namespace OnlineShopOfSportEquipment.Controllers
                     }
 
                     productViewModel.Product!.Image = fileName + extension;
-                    _service.Add(productViewModel.Product);
-                    _service.Save();
+                    await _service.AddAsync(productViewModel.Product);
+                    await _service.SaveAsync();
                 }
                 else
                 {
@@ -96,7 +96,7 @@ namespace OnlineShopOfSportEquipment.Controllers
                         productViewModel.Product.Image = objFromDb!.Image;
                     }
                     _service.Update(productViewModel.Product);
-                    _service.Save();
+                    await _service.SaveAsync();
                 }
                 return RedirectToAction("Index");
             }
@@ -124,7 +124,7 @@ namespace OnlineShopOfSportEquipment.Controllers
         //POST - DELETE
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public IActionResult DeletePost(Guid? id)
+        public async Task<IActionResult> DeletePost(Guid? id)
         {
             var product = _service.Find(id.GetValueOrDefault());
             if (product != null)
@@ -136,7 +136,7 @@ namespace OnlineShopOfSportEquipment.Controllers
                     System.IO.File.Delete(oldFile);
                 }
                 _service.Remove(product);
-                _service.Save();
+                await _service.SaveAsync();
                 return RedirectToAction("Index");
             }
             else return NotFound();

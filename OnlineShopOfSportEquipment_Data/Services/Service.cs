@@ -18,9 +18,9 @@ namespace OnlineShopOfSportEquipment_Data.Services
             _context = context;
             this.dbSet = _context.Set<T>();
         }
-        public void Add(T item)
+        public async Task AddAsync(T item)
         {
-            dbSet!.Add(item);
+            await dbSet!.AddAsync(item);
         }
 
         public T Find(Guid id)
@@ -56,7 +56,7 @@ namespace OnlineShopOfSportEquipment_Data.Services
         public IEnumerable<T> GetAll(Expression<Func<T, bool>>? filter = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, string? includeProperties = null, bool isTracking = true)
         {
             IQueryable<T> query = dbSet;
-            if (filter != null) 
+            if (filter != null)
             {
                 query = query.Where(filter);
             }
@@ -83,9 +83,9 @@ namespace OnlineShopOfSportEquipment_Data.Services
             dbSet.Remove(item);
         }
 
-        public void Save()
+        public async Task SaveAsync()
         {
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
     }
 }

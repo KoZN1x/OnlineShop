@@ -28,12 +28,12 @@ namespace OnlineShopOfSportEquipment.Controllers
         //POST - CREATE
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Category category)
+        public async Task<IActionResult> Create(Category category)
         {
             if (ModelState.IsValid)
             {
-                _service.Add(category);
-                _service.Save();
+                await _service.AddAsync(category);
+                await _service.SaveAsync();
             }
             return RedirectToAction("Index");
         }
@@ -42,8 +42,7 @@ namespace OnlineShopOfSportEquipment.Controllers
         public IActionResult Edit(Guid? id)
         {
             if (id != null)
-            {
-
+            { 
                 var obj = _service.Find(id.GetValueOrDefault());
                 if (obj != null)
                 {
@@ -57,12 +56,12 @@ namespace OnlineShopOfSportEquipment.Controllers
         //POST - EDIT
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Category category)
+        public async Task<IActionResult> Edit(Category category)
         {
             if (ModelState.IsValid)
             {
                 _service.Update(category);
-                _service.Save();
+                await _service.SaveAsync();
             }
             return RedirectToAction("Index");
         }
@@ -85,13 +84,13 @@ namespace OnlineShopOfSportEquipment.Controllers
         //POST - DELETE
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult DeletePost(Guid? id)
+        public async Task<IActionResult> DeletePost(Guid? id)
         {
             var obj = _service.Find(id.GetValueOrDefault());
             if (obj != null)
             {
                 _service.Remove(obj);
-                _service.Save();
+                await _service.SaveAsync();
                 return RedirectToAction("Index");
             }
             else return NotFound();

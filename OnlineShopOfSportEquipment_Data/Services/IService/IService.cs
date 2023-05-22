@@ -20,8 +20,8 @@ namespace OnlineShopOfSportEquipment_Data.Services.IService
             string? inclideProperties = null,
             bool isTracking = true
             );
-        public void Add(T item);
+        public Task AddAsync(T item);
         public void Remove(T item);
-        public void Save();
+        public Task SaveAsync();
     }
 }
