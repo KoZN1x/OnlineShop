@@ -24,7 +24,7 @@ namespace OnlineShopOfSportEquipment.Controllers
         {
             var homeViewModel = new HomeViewModel()
             {
-                Products = _productService.GetAll(includeProperties: "Category,TrainingType"),//_db.Products!.Include(x => x.Category).Include(x => x.TrainingType),
+                Products = _productService.GetAll(includeProperties: "Category,TrainingType"),
                 Categories = _categoryService.GetAll()
             };
             return View(homeViewModel);

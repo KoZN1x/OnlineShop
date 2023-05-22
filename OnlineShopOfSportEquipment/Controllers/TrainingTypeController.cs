@@ -10,6 +10,7 @@ namespace OnlineShopOfSportEquipment.Controllers
     public class TrainingTypeController : Controller
     {
         private readonly ITrainingTypeService _service;
+
         public TrainingTypeController(ITrainingTypeService service)
         {
             _service = service;

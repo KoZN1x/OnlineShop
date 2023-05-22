@@ -12,16 +12,19 @@ namespace OnlineShopOfSportEquipment.Controllers
     {
         private readonly IProductService _service;
         private readonly IWebHostEnvironment _webHostEnvironment;
+
         public ProductController(IProductService service, IWebHostEnvironment webHostEnvironment)
         {
             _service = service;
             _webHostEnvironment = webHostEnvironment;
         }
+
         public IActionResult Index()
         {
             IEnumerable<Product> productList = _service.GetAll(includeProperties: "Category,TrainingType");
             return View(productList);
         }
+
         //GET - UPSERT
         public IActionResult Upsert(Guid? id)
         {
@@ -104,7 +107,6 @@ namespace OnlineShopOfSportEquipment.Controllers
             productViewModel.TrainingTypeSelectList = _service.GetAllDropDownList(WC.TrainingTypeName);
             return View(productViewModel);
         }
-
 
         //GET - DELETE
         public IActionResult Delete(Guid? id)

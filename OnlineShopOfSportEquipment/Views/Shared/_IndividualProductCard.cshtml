@@ -2,8 +2,8 @@
 @using OnlineShopOfSportEquipment_Utility
 <div class="col-lg-4 cold-md-6 pb-4 filter @Model.Category!.Name!.Replace(' ', '_')">
     <!--Card-->
-    <div class="card bg-white rounded shadow-sm" style="border:1px solid #222">
-        <div class="card-body px-3 pt-3 pb-1 row">
+    <div class="card bg-white rounded shadow-sm" style="height:40vw; border:1px solid #222">
+        <div class="card-body px-3 pt-3 pb-1 row" style="height: 10%">
             <div class="col-sm">
                 <label class="float-start">@Model.Name</label>
             </div>
@@ -23,8 +23,12 @@
                 </label>
             </div>
         </div>
-        <img class="card-img-top img-fluid d-block mx-auto mb-3" src="@WC.ImagePath@Model.Image" alt="Card image cap" />
-        <div class="card-body p-1 px-3 row">
+
+        <div class="card-body" style="height:70%;">
+            <img class="card-img-top img-fluid d-block mx-auto mb-3" style="height:auto; max-width: 100%" src="@WC.ImagePath@Model.Image" alt="Card image cap" />
+        </div>
+        
+        <div class="card-body p-1 px-3 row" style="height:20%">
             <div class="col-6">
                 <span class="badge p-2 border w-100 text-primary" style="background-color:lavenderblush">@Model.Category!.Name</span>
             </div>

@@ -142,7 +142,6 @@ namespace OnlineShopOfSportEquipment.Areas.Identity.Pages.Account
                     if (User.IsInRole(WC.AdminRole))
                     {
                         await _userManager.AddToRoleAsync(user, WC.AdminRole);
-
                     }
                     else
                     {

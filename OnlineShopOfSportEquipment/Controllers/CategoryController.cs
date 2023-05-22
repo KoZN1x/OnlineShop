@@ -10,15 +10,18 @@ namespace OnlineShopOfSportEquipment.Controllers
     public class CategoryController : Controller
     {
         private readonly ICategoryService _service;
+
         public CategoryController(ICategoryService service)
         {
             _service = service;
         }
+
         public IActionResult Index()
         {
             IEnumerable<Category> objList = _service.GetAll();
             return View(objList);
         }
+
         //GET - CREATE
         public IActionResult Create()
         {

@@ -11,13 +11,17 @@ namespace OnlineShopOfSportEquipment.Controllers
     { 
         private readonly IOrderHeaderService _orderHeaderService;
         private readonly IOrderDetailService _orderDetailService;
+
         [BindProperty]
         public OrderViewModel? orderViewModel { get; set; }
+
         public OrderController(IOrderHeaderService orderHeaderService, IOrderDetailService orderDetailService)
         {
             _orderDetailService = orderDetailService;
             _orderHeaderService = orderHeaderService;
         }
+
+
         public IActionResult Index()
         {
             var orderListViewModel = new OrderListViewModel()

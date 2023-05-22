@@ -19,6 +19,7 @@ namespace OnlineShopOfSportEquipment.Controllers
 
         [BindProperty]
         public ProductUserViewModel? ProductUserViewModel { get; set; }
+
         public CartController(IProductService productService, IApplicationUserService applicationUserService,
             IOrderDetailService orderDetailService, IOrderHeaderService orderHeaderService)
         {
