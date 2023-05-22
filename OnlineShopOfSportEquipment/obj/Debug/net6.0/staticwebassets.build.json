@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "i5iJmxYa0kjYRfr8ucFm/RG2CXLBup05Y4121Ef4W2k=",
+  "Hash": "udhUjTMB97BorZgVb1zYszRx2Tb+Cps2bmg8vj5rE+A=",
   "Source": "OnlineShopOfSportEquipment",
   "BasePath": "_content/OnlineShopOfSportEquipment",
   "Mode": "Default",
@@ -36939,6 +36939,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fontawesome\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Identity": "E:\\Programms\\OnlineShopOfSportEquipment\\wwwroot\\images\\product\\13d733e8-3e58-4dce-af49-768e3045a692.PNG",
+      "SourceId": "OnlineShopOfSportEquipment",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Programms\\OnlineShopOfSportEquipment\\wwwroot\\",
+      "BasePath": "_content/OnlineShopOfSportEquipment",
+      "RelativePath": "images/product/13d733e8-3e58-4dce-af49-768e3045a692.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\13d733e8-3e58-4dce-af49-768e3045a692.PNG"
     },
     {
       "Identity": "E:\\Programms\\OnlineShopOfSportEquipment\\wwwroot\\images\\product\\cea0ed97-297a-43a9-8fc3-6d8aa61fb206.jpg",

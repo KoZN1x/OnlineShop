@@ -10,22 +10,10 @@ namespace OnlineShopOfSportEquipment_Models
 {
     public class CreditCard
     {
-        private string cardValue = "";
-
         [NotMapped]
-        [CreditCard]
-        [Required]
-        public string CreditCardNumber
-        {
-            get { return cardValue; }
-            set
-            {
-                if (isValidCardNumberLength(value))
-                {
-                    cardValue = value;
-                }
-            }
-        }
+        [Required(ErrorMessage = "Credit card number is required!")]
+        [CreditCard(ErrorMessage = "Input correct credit card number!")]
+        public string? CreditCardNumber { get; set; }
 
         [NotMapped]
         [Required]
@@ -41,35 +29,5 @@ namespace OnlineShopOfSportEquipment_Models
         [Required]
         [Range(100, 999)]
         public int CVV { get; set; }
-
-        private bool isValidCardNumberLength(string creditCardNumber)
-        {
-            creditCardNumber = creditCardNumber.Replace(" ", "");
-            if (creditCardNumber.Length == 16)
-            {
-                return LunaValidation(creditCardNumber);
-            }
-            return false;
-        }
-
-        private bool LunaValidation(string creditCardNumber)
-        {
-            int[] number = new int[16];
-            int sum = 0;
-            for (int i = 0; i < 15; i += 2)
-            {
-                var doubledValue = int.Parse(creditCardNumber[i].ToString()) * 2;
-                number[i] = doubledValue > 9 ? doubledValue - 9 : doubledValue;
-            }
-            for (int i = 1; i < 16; i += 2)
-            {
-                number[i] = int.Parse(creditCardNumber[i].ToString());
-            }
-            foreach (var symbol in number)
-            {
-                sum += symbol;
-            }
-            return sum % 10 == 0;
-        }
     }
 }

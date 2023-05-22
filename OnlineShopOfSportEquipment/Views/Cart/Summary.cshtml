@@ -128,14 +128,21 @@
                                         </div>
                                         <div class="row my-auto">
                                             <div class="col-6">
-                                                <label>Card Date</label>
+                                                <label>MM</label>
                                             </div>
                                             <br />
                                             <div class="col-6">
                                                 <input asp-for="ApplicationUser!.CreditCard!.CardValidMonth" required class="form-control" />
-                                                /
-                                                <input asp-for="ApplicationUser!.CreditCard!.CardValidYear" required class="form-control" />
                                                 <span asp-validation-for="ApplicationUser!.CreditCard!.CardValidMonth" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                        <div class="row my-auto">
+                                            <div class="col-6">
+                                                <label>YY</label>
+                                            </div>
+                                            <br />
+                                            <div class="col-6">
+                                                <input asp-for="ApplicationUser!.CreditCard!.CardValidYear" required class="form-control" />
                                                 <span asp-validation-for="ApplicationUser!.CreditCard!.CardValidYear" class="text-danger"></span>
                                             </div>
                                         </div>
