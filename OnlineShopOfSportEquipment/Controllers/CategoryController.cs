@@ -51,9 +51,9 @@ namespace OnlineShopOfSportEquipment.Controllers
                 {
                     return View(obj);
                 }
-                return NotFound();
+                else return NotFound();
             }
-            return NotFound();
+            else return NotFound();
         }
 
         //POST - EDIT

@@ -8,7 +8,7 @@ namespace OnlineShopOfSportEquipment_Models
         public Guid Id { get; set; }
         [Required]
         public string? Name { get; set; }
-        public virtual IEnumerable<Product> Products { get; set; } = new List<Product>();
+        public virtual ICollection<Product>? Products { get; set; } = new List<Product>();
 
     }
 }
