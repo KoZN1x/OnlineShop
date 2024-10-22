@@ -20,17 +20,17 @@ namespace OnlineShopOfSportEquipment.Controllers
             _categoryService = categoryService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> IndexAsync()
         {
             var homeViewModel = new HomeViewModel()
             {
-                Products = _productService.GetAll(includeProperties: "Category,TrainingType"),
-                Categories = _categoryService.GetAll()
+                Products = await _productService.GetAllAsync(includeProperties: "Category,TrainingType"),
+                Categories = await _categoryService.GetAllAsync()
             };
             return View(homeViewModel);
         }
 
-        public IActionResult Details(Guid? id)
+        public async Task<IActionResult> DetailsAsync(Guid? id)
         {
             var shoppingCartList = new List<ShoppingCart>();
             if (HttpContext.Session.Get<IEnumerable<ShoppingCart>>(WC.SessionCart) != null
@@ -41,7 +41,7 @@ namespace OnlineShopOfSportEquipment.Controllers
 
             var detailsViewModel = new DetailsViewModel()
             {
-                Product = _productService.FirstOrDefault(x => x.Id == id, inclideProperties: "Category,TrainingType"),
+                Product = await _productService.FirstOrDefaultAsync(x => x.Id == id, inclideProperties: "Category,TrainingType"),
                 ExistInCart = false
             };
 

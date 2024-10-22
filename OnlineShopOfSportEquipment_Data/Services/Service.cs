@@ -23,14 +23,14 @@ namespace OnlineShopOfSportEquipment_Data.Services
             await dbSet!.AddAsync(item);
         }
 
-        public T Find(Guid id)
+        public async Task<T> FindAsync(Guid id)
         {
-#pragma warning disable CS8603 // Possible null reference return.
-            return dbSet.Find(id);
-#pragma warning restore CS8603 // Possible null reference return.
+#pragma warning disable CS8603
+            return await dbSet.FindAsync(id);
+#pragma warning restore CS8603
         }
 
-        public T FirstOrDefault(Expression<Func<T, bool>>? filter = null, string? includeProperties = null, bool isTracking = true)
+        public async Task<T> FirstOrDefaultAsync(Expression<Func<T, bool>>? filter = null, string? includeProperties = null, bool isTracking = true)
         {
             IQueryable<T> query = dbSet;
             if (filter != null)
@@ -48,12 +48,12 @@ namespace OnlineShopOfSportEquipment_Data.Services
             {
                 query = query.AsNoTracking();
             }
-#pragma warning disable CS8603 // Possible null reference return.
-            return query.FirstOrDefault();
-#pragma warning restore CS8603 // Possible null reference return.
+#pragma warning disable CS8603
+            return await query.FirstOrDefaultAsync();
+#pragma warning restore CS8603
         }
 
-        public IEnumerable<T> GetAll(Expression<Func<T, bool>>? filter = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, string? includeProperties = null, bool isTracking = true)
+        public async Task<IEnumerable<T>> GetAllAsync(Expression<Func<T, bool>>? filter = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, string? includeProperties = null, bool isTracking = true)
         {
             IQueryable<T> query = dbSet;
             if (filter != null)
@@ -75,7 +75,7 @@ namespace OnlineShopOfSportEquipment_Data.Services
             {
                 query = query.AsNoTracking();
             }
-            return query.ToList();
+            return await query.ToListAsync();
         }
 
         public void Remove(T item)

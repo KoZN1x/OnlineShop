@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Programms\\OnlineShopOfSportEquipment_Data\\OnlineShopOfSportEquipment_Data.csproj": {}
+    "E:\\Programms\\OnlineShop\\OnlineShopOfSportEquipment_Data\\OnlineShopOfSportEquipment_Data.csproj": {}
   },
   "projects": {
-    "E:\\Programms\\OnlineShopOfSportEquipment_Data\\OnlineShopOfSportEquipment_Data.csproj": {
+    "E:\\Programms\\OnlineShop\\OnlineShopOfSportEquipment_Data\\OnlineShopOfSportEquipment_Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Programms\\OnlineShopOfSportEquipment_Data\\OnlineShopOfSportEquipment_Data.csproj",
+        "projectUniqueName": "E:\\Programms\\OnlineShop\\OnlineShopOfSportEquipment_Data\\OnlineShopOfSportEquipment_Data.csproj",
         "projectName": "OnlineShopOfSportEquipment_Data",
-        "projectPath": "E:\\Programms\\OnlineShopOfSportEquipment_Data\\OnlineShopOfSportEquipment_Data.csproj",
+        "projectPath": "E:\\Programms\\OnlineShop\\OnlineShopOfSportEquipment_Data\\OnlineShopOfSportEquipment_Data.csproj",
         "packagesPath": "C:\\Users\\KoZN\\.nuget\\packages\\",
-        "outputPath": "E:\\Programms\\OnlineShopOfSportEquipment_Data\\obj\\",
+        "outputPath": "E:\\Programms\\OnlineShop\\OnlineShopOfSportEquipment_Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,17 +26,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Programms\\OnlineShopOfSportEquipment_Models\\OnlineShopOfSportEquipment_Models.csproj": {
-                "projectPath": "E:\\Programms\\OnlineShopOfSportEquipment_Models\\OnlineShopOfSportEquipment_Models.csproj"
+              "E:\\Programms\\OnlineShop\\OnlineShopOfSportEquipment_Models\\OnlineShopOfSportEquipment_Models.csproj": {
+                "projectPath": "E:\\Programms\\OnlineShop\\OnlineShopOfSportEquipment_Models\\OnlineShopOfSportEquipment_Models.csproj"
               },
-              "E:\\Programms\\OnlineShopOfSportEquipment_Utility\\OnlineShopOfSportEquipment_Utility.csproj": {
-                "projectPath": "E:\\Programms\\OnlineShopOfSportEquipment_Utility\\OnlineShopOfSportEquipment_Utility.csproj"
+              "E:\\Programms\\OnlineShop\\OnlineShopOfSportEquipment_Utility\\OnlineShopOfSportEquipment_Utility.csproj": {
+                "projectPath": "E:\\Programms\\OnlineShop\\OnlineShopOfSportEquipment_Utility\\OnlineShopOfSportEquipment_Utility.csproj"
               }
             }
           }
@@ -45,6 +46,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -112,18 +118,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Programms\\OnlineShopOfSportEquipment_Models\\OnlineShopOfSportEquipment_Models.csproj": {
+    "E:\\Programms\\OnlineShop\\OnlineShopOfSportEquipment_Models\\OnlineShopOfSportEquipment_Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Programms\\OnlineShopOfSportEquipment_Models\\OnlineShopOfSportEquipment_Models.csproj",
+        "projectUniqueName": "E:\\Programms\\OnlineShop\\OnlineShopOfSportEquipment_Models\\OnlineShopOfSportEquipment_Models.csproj",
         "projectName": "OnlineShopOfSportEquipment_Models",
-        "projectPath": "E:\\Programms\\OnlineShopOfSportEquipment_Models\\OnlineShopOfSportEquipment_Models.csproj",
+        "projectPath": "E:\\Programms\\OnlineShop\\OnlineShopOfSportEquipment_Models\\OnlineShopOfSportEquipment_Models.csproj",
         "packagesPath": "C:\\Users\\KoZN\\.nuget\\packages\\",
-        "outputPath": "E:\\Programms\\OnlineShopOfSportEquipment_Models\\obj\\",
+        "outputPath": "E:\\Programms\\OnlineShop\\OnlineShopOfSportEquipment_Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -138,6 +144,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -150,6 +157,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -201,18 +213,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Programms\\OnlineShopOfSportEquipment_Utility\\OnlineShopOfSportEquipment_Utility.csproj": {
+    "E:\\Programms\\OnlineShop\\OnlineShopOfSportEquipment_Utility\\OnlineShopOfSportEquipment_Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Programms\\OnlineShopOfSportEquipment_Utility\\OnlineShopOfSportEquipment_Utility.csproj",
+        "projectUniqueName": "E:\\Programms\\OnlineShop\\OnlineShopOfSportEquipment_Utility\\OnlineShopOfSportEquipment_Utility.csproj",
         "projectName": "OnlineShopOfSportEquipment_Utility",
-        "projectPath": "E:\\Programms\\OnlineShopOfSportEquipment_Utility\\OnlineShopOfSportEquipment_Utility.csproj",
+        "projectPath": "E:\\Programms\\OnlineShop\\OnlineShopOfSportEquipment_Utility\\OnlineShopOfSportEquipment_Utility.csproj",
         "packagesPath": "C:\\Users\\KoZN\\.nuget\\packages\\",
-        "outputPath": "E:\\Programms\\OnlineShopOfSportEquipment_Utility\\obj\\",
+        "outputPath": "E:\\Programms\\OnlineShop\\OnlineShopOfSportEquipment_Utility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -227,6 +239,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -239,6 +252,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -290,7 +308,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

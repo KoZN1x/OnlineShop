@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+hI+hVfczuAGBTWaj1Uta1TktZvke5YHj/B5vtQ9oWdnz8rrJ0fwoZB2QQslvTJY3pIRUF1lpeDVQAOJouXNcw==",
+  "dgSpecHash": "ix4NoYItRWE=",
   "success": true,
-  "projectFilePath": "E:\\Programms\\OnlineShopOfSportEquipment_Models\\OnlineShopOfSportEquipment_Models.csproj",
+  "projectFilePath": "E:\\Programms\\OnlineShop\\OnlineShopOfSportEquipment_Models\\OnlineShopOfSportEquipment_Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KoZN\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\KoZN\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

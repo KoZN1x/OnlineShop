@@ -16,14 +16,14 @@ namespace OnlineShopOfSportEquipment.Controllers
             _service = service;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> IndexAsync()
         {
-            IEnumerable<Category> objList = _service.GetAll();
+            IEnumerable<Category> objList = await _service.GetAllAsync();
             return View(objList);
         }
 
         //GET - CREATE
-        public IActionResult Create()
+        public IActionResult CreateAsync()
         {
             return View();
         }
@@ -31,7 +31,7 @@ namespace OnlineShopOfSportEquipment.Controllers
         //POST - CREATE
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Category category)
+        public async Task<IActionResult> CreateAsync(Category category)
         {
             if (ModelState.IsValid)
             {
@@ -42,24 +42,24 @@ namespace OnlineShopOfSportEquipment.Controllers
         }
 
         //GET - EDIT
-        public IActionResult Edit(Guid? id)
+        public async Task<IActionResult> EditAsync(Guid? id)
         {
             if (id != null)
             { 
-                var obj = _service.Find(id.GetValueOrDefault());
+                var obj = await _service.FindAsync(id.GetValueOrDefault());
                 if (obj != null)
                 {
                     return View(obj);
                 }
-                else return NotFound();
+                return NotFound();
             }
-            else return NotFound();
+            return NotFound();
         }
 
         //POST - EDIT
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Category category)
+        public async Task<IActionResult> EditAsync(Category category)
         {
             if (ModelState.IsValid)
             {
@@ -70,11 +70,11 @@ namespace OnlineShopOfSportEquipment.Controllers
         }
 
         //GET - DELETE
-        public IActionResult Delete(Guid? id)
+        public async Task<IActionResult> DeleteAsync(Guid? id)
         {
             if (id != null)
             {
-                var obj = _service.Find(id.GetValueOrDefault());
+                var obj = await _service.FindAsync(id.GetValueOrDefault());
                 if (obj != null)
                 {
                     return View(obj);
@@ -87,9 +87,9 @@ namespace OnlineShopOfSportEquipment.Controllers
         //POST - DELETE
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeletePost(Guid? id)
+        public async Task<IActionResult> DeletePostAsync(Guid? id)
         {
-            var obj = _service.Find(id.GetValueOrDefault());
+            var obj = await _service.FindAsync(id.GetValueOrDefault());
             if (obj != null)
             {
                 _service.Remove(obj);

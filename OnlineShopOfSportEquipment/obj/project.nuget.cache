@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8enXppPbKfAKUcD/UKMqA88ks63SGr49NLd+Qaj9Y5SZhGkhN8D80QU5Q4BYtouKymjH1Ei3pjmpz49rCkCSfw==",
+  "dgSpecHash": "bBE/Jui3bWU=",
   "success": true,
-  "projectFilePath": "E:\\Programms\\OnlineShopOfSportEquipment\\OnlineShopOfSportEquipment.csproj",
+  "projectFilePath": "E:\\Programms\\OnlineShop\\OnlineShopOfSportEquipment\\OnlineShopOfSportEquipment.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KoZN\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\KoZN\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

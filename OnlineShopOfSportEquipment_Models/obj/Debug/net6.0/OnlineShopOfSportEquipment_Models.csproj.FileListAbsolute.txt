@@ -10,3 +10,16 @@ E:\Programms\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\OnlineShopOfSpor
 E:\Programms\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\refint\OnlineShopOfSportEquipment_Models.dll
 E:\Programms\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\OnlineShopOfSportEquipment_Models.pdb
 E:\Programms\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\ref\OnlineShopOfSportEquipment_Models.dll
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Models\bin\Debug\net6.0\OnlineShopOfSportEquipment_Models.deps.json
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Models\bin\Debug\net6.0\OnlineShopOfSportEquipment_Models.dll
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Models\bin\Debug\net6.0\OnlineShopOfSportEquipment_Models.pdb
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\OnlineShopOfSportEquipment_Models.csproj.AssemblyReference.cache
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\OnlineShopOfSportEquipment_Models.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\OnlineShopOfSportEquipment_Models.AssemblyInfoInputs.cache
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\OnlineShopOfSportEquipment_Models.AssemblyInfo.cs
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\OnlineShopOfSportEquipment_Models.csproj.CoreCompileInputs.cache
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\OnlineShopOfSportEquipment_Models.sourcelink.json
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\OnlineShopOfSportEquipment_Models.dll
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\refint\OnlineShopOfSportEquipment_Models.dll
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\OnlineShopOfSportEquipment_Models.pdb
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Models\obj\Debug\net6.0\ref\OnlineShopOfSportEquipment_Models.dll

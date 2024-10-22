@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0fi1c2iiKK8FQxtwVD29v1VM8k/7E0nq0wDyWPZpucd/EEoNx3W53HSRiuK1dAIS+H+REUap+wZWYr2I2TCXrQ==",
+  "dgSpecHash": "4uwRETk9OdA=",
   "success": true,
-  "projectFilePath": "E:\\Programms\\OnlineShopOfSportEquipment_Tests\\OnlineShopOfSportEquipment_Tests.csproj",
+  "projectFilePath": "E:\\Programms\\OnlineShop\\OnlineShopOfSportEquipment_Tests\\OnlineShopOfSportEquipment_Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KoZN\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\KoZN\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",

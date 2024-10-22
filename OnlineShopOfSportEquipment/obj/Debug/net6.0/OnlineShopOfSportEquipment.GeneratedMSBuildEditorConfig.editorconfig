@@ -9,273 +9,275 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OnlineShopOfSportEquipment
 build_property.RootNamespace = OnlineShopOfSportEquipment
-build_property.ProjectDir = E:\Programms\OnlineShopOfSportEquipment\
+build_property.ProjectDir = E:\Programms\OnlineShop\OnlineShopOfSportEquipment\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\Programms\OnlineShopOfSportEquipment
+build_property.MSBuildProjectDirectory = E:\Programms\OnlineShop\OnlineShopOfSportEquipment
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWxDaGFuZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxFeHRlcm5hbExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Lockout.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Lockout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2Nrb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Login.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGgyZmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGhSZWNvdmVyeUNvZGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Logout.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGVsZXRlUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGlzYWJsZTJmYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRG93bmxvYWRQZXJzb25hbERhdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/Email.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/Email.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW5hYmxlQXV0aGVudGljYXRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRXh0ZXJuYWxMb2dpbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcR2VuZXJhdGVSZWNvdmVyeUNvZGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUmVzZXRBdXRoZW50aWNhdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2V0UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2hvd1JlY292ZXJ5Q29kZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcVHdvRmFjdG9yQXV0aGVudGljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1N0YXR1c01lc3NhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Register.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfU3RhdHVzTWVzc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/Error.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/_ViewImports.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Areas/Identity/Pages/_ViewStart.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/Cart/Index.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/Cart/OrderConfirmation.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/Cart/OrderConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxPcmRlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/Cart/Summary.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/Cart/Summary.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxTdW1tYXJ5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/Category/Create.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/Category/Delete.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/Category/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/Category/Edit.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/Category/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/Category/Index.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/Home/Details.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/Home/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/Home/Index.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/Home/Privacy.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/Order/Details.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/Order/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/Order/Index.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/Product/Delete.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/Product/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/Product/Index.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/Product/Upsert.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/Product/Upsert.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxVcHNlcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/Shared/Error.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/Shared/_IndividualProductCard.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/Shared/_IndividualProductCard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JbmRpdmlkdWFsUHJvZHVjdENhcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/Shared/_LoginPartial.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/TrainingType/Create.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/TrainingType/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5pbmdUeXBlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/TrainingType/Delete.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/TrainingType/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5pbmdUeXBlXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/TrainingType/Edit.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/TrainingType/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5pbmdUeXBlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/TrainingType/Index.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/TrainingType/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5pbmdUeXBlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/_ViewImports.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/_ViewStart.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Programms/OnlineShopOfSportEquipment/Views/Shared/_Layout.cshtml]
+[E:/Programms/OnlineShop/OnlineShopOfSportEquipment/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ozj6w0mslz

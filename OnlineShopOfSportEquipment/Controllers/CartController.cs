@@ -29,7 +29,7 @@ namespace OnlineShopOfSportEquipment.Controllers
             _orderHeaderService = orderHeaderService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> IndexAsync()
         {
             var shoppingCartList = new List<ShoppingCart>();
             if (HttpContext.Session.Get<IEnumerable<ShoppingCart>>(WC.SessionCart) != null
@@ -38,7 +38,7 @@ namespace OnlineShopOfSportEquipment.Controllers
                 shoppingCartList = HttpContext.Session.Get<List<ShoppingCart>>(WC.SessionCart);
             }
             var productsInCart = shoppingCartList!.Select(x => x.ProductId).ToList();
-            var productsListTemp = _productService.GetAll(x => productsInCart.Contains(x.Id));
+            var productsListTemp = await _productService.GetAllAsync(x => productsInCart.Contains(x.Id));
             var productsList = new List<Product>();
             foreach (var productInCart in shoppingCartList!)
             {
@@ -60,10 +60,10 @@ namespace OnlineShopOfSportEquipment.Controllers
                 shoppingCartList.Add(new ShoppingCart() { ProductId = product.Id, ProductCount = product.TempCount });
             }
             HttpContext.Session.Set(WC.SessionCart, shoppingCartList);
-            return RedirectToAction(nameof(Summary));
+            return RedirectToAction(nameof(SummaryAsync));
         }
 
-        public IActionResult Summary()
+        public async Task<IActionResult> SummaryAsync()
         {
             var claimsIdentity = (ClaimsIdentity?)User.Identity;
             var claim = claimsIdentity?.FindFirst(ClaimTypes.NameIdentifier);
@@ -76,16 +76,16 @@ namespace OnlineShopOfSportEquipment.Controllers
                 shoppingCartList = HttpContext.Session.Get<List<ShoppingCart>>(WC.SessionCart);
             }
             var productsInCart = shoppingCartList!.Select(x => x.ProductId).ToList();
-            IEnumerable<Product> productsList = _productService.GetAll(x => productsInCart.Contains(x.Id));
+            IEnumerable<Product> productsList = await _productService.GetAllAsync(x => productsInCart.Contains(x.Id));
 
             ProductUserViewModel = new ProductUserViewModel()
             {
-                ApplicationUser = _applicationUserService.FirstOrDefault(x => x.Id == claim!.Value)
+                ApplicationUser = await _applicationUserService.FirstOrDefaultAsync(x => x.Id == claim!.Value)
             };
 
             foreach (var item in shoppingCartList!)
             {
-                var productTemp = _productService.FirstOrDefault(x => x.Id == item.ProductId);
+                var productTemp = await _productService.FirstOrDefaultAsync(x => x.Id == item.ProductId);
                 productTemp!.TempCount = item.ProductCount;
                 ProductUserViewModel.ProductList!.Add(productTemp);
             }
@@ -95,7 +95,7 @@ namespace OnlineShopOfSportEquipment.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [ActionName("Summary")]
-        public async Task<IActionResult> SummaryPost(ProductUserViewModel productUserViewModel)
+        public async Task<IActionResult> SummaryPostAsync(ProductUserViewModel productUserViewModel)
         {
             var claimsIdentity = (ClaimsIdentity)User.Identity!;
             var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
@@ -143,12 +143,12 @@ namespace OnlineShopOfSportEquipment.Controllers
                 await _orderDetailService.AddAsync(orderDetail);
             }
             await _orderDetailService.SaveAsync();
-            return RedirectToAction(nameof(OrderConfirmation), new { id = orderHeader.Id });
+            return RedirectToAction(nameof(OrderConfirmationAsync), new { id = orderHeader.Id });
         }
 
-        public IActionResult OrderConfirmation(int id = 0)
+        public async Task<IActionResult> OrderConfirmationAsync(int id = 0)
         {
-            var orderHeader = _orderHeaderService.FirstOrDefault(x => x.Id == id);
+            var orderHeader = await _orderHeaderService.FirstOrDefaultAsync(x => x.Id == id);
             HttpContext.Session.Clear();
             return View(orderHeader);
         }

@@ -19,14 +19,14 @@ namespace OnlineShopOfSportEquipment.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> IndexAsync()
         {
-            IEnumerable<Product> productList = _service.GetAll(includeProperties: "Category,TrainingType");
+            IEnumerable<Product> productList = await _service.GetAllAsync(includeProperties: "Category,TrainingType");
             return View(productList);
         }
 
         //GET - UPSERT
-        public IActionResult Upsert(Guid? id)
+        public async Task<IActionResult> UpsertAsync(Guid? id)
         {
             ProductViewModel productViewModel = new ProductViewModel()
             {
@@ -40,7 +40,7 @@ namespace OnlineShopOfSportEquipment.Controllers
             }
             else
             {
-                productViewModel.Product = _service.Find(id.GetValueOrDefault());
+                productViewModel.Product = await _service.FindAsync(id.GetValueOrDefault());
                 if (productViewModel.Product == null)
                 {
                     return NotFound();
@@ -52,7 +52,7 @@ namespace OnlineShopOfSportEquipment.Controllers
         //POST - Upsert
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Upsert(ProductViewModel productViewModel)
+        public async Task<IActionResult> UpsertAsync(ProductViewModel productViewModel)
         {
             if (ModelState.IsValid)
             {
@@ -77,7 +77,7 @@ namespace OnlineShopOfSportEquipment.Controllers
                 else
                 {
                     //Updating
-                    var objFromDb = _service.FirstOrDefault(x => x.Id == productViewModel.Product.Id, isTracking: false);
+                    var objFromDb = await _service.FirstOrDefaultAsync(x => x.Id == productViewModel.Product.Id, isTracking: false);
                     if (files.Count > 0)
                     {
                         string upload = webRootPath + WC.ImagePath;
@@ -109,11 +109,11 @@ namespace OnlineShopOfSportEquipment.Controllers
         }
 
         //GET - DELETE
-        public IActionResult Delete(Guid? id)
+        public async Task<IActionResult> DeleteAsync(Guid? id)
         {
             if (id != null)
             {
-                var product = _service.FirstOrDefault(x => x.Id == id, inclideProperties: "Category,TrainingType");
+                var product = await _service.FirstOrDefaultAsync(x => x.Id == id, inclideProperties: "Category,TrainingType");
                 if (product != null)
                 {
                     return View(product);
@@ -126,9 +126,9 @@ namespace OnlineShopOfSportEquipment.Controllers
         //POST - DELETE
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeletePost(Guid? id)
+        public async Task<IActionResult> DeletePostAsync(Guid? id)
         {
-            var product = _service.Find(id.GetValueOrDefault());
+            var product = await _service.FindAsync(id.GetValueOrDefault());
             if (product != null)
             {
                 string upload = _webHostEnvironment.WebRootPath + WC.ImagePath;

@@ -10,3 +10,16 @@ E:\Programms\OnlineShopOfSportEquipment_Utility\obj\Debug\net6.0\OnlineShopOfSpo
 E:\Programms\OnlineShopOfSportEquipment_Utility\obj\Debug\net6.0\refint\OnlineShopOfSportEquipment_Utility.dll
 E:\Programms\OnlineShopOfSportEquipment_Utility\obj\Debug\net6.0\OnlineShopOfSportEquipment_Utility.pdb
 E:\Programms\OnlineShopOfSportEquipment_Utility\obj\Debug\net6.0\ref\OnlineShopOfSportEquipment_Utility.dll
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Utility\bin\Debug\net6.0\OnlineShopOfSportEquipment_Utility.deps.json
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Utility\bin\Debug\net6.0\OnlineShopOfSportEquipment_Utility.dll
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Utility\bin\Debug\net6.0\OnlineShopOfSportEquipment_Utility.pdb
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Utility\obj\Debug\net6.0\OnlineShopOfSportEquipment_Utility.csproj.AssemblyReference.cache
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Utility\obj\Debug\net6.0\OnlineShopOfSportEquipment_Utility.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Utility\obj\Debug\net6.0\OnlineShopOfSportEquipment_Utility.AssemblyInfoInputs.cache
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Utility\obj\Debug\net6.0\OnlineShopOfSportEquipment_Utility.AssemblyInfo.cs
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Utility\obj\Debug\net6.0\OnlineShopOfSportEquipment_Utility.csproj.CoreCompileInputs.cache
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Utility\obj\Debug\net6.0\OnlineShopOfSportEquipment_Utility.sourcelink.json
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Utility\obj\Debug\net6.0\OnlineShopOfSportEquipment_Utility.dll
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Utility\obj\Debug\net6.0\refint\OnlineShopOfSportEquipment_Utility.dll
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Utility\obj\Debug\net6.0\OnlineShopOfSportEquipment_Utility.pdb
+E:\Programms\OnlineShop\OnlineShopOfSportEquipment_Utility\obj\Debug\net6.0\ref\OnlineShopOfSportEquipment_Utility.dll

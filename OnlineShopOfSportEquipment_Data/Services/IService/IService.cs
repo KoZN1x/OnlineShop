@@ -9,13 +9,13 @@ namespace OnlineShopOfSportEquipment_Data.Services.IService
 {
     public interface IService<T> where T : class
     {
-        public T Find(Guid id);
-        public IEnumerable<T> GetAll(
+        public Task<T> FindAsync(Guid id);
+        public Task<IEnumerable<T>> GetAllAsync(
             Expression<Func<T, bool>>? filter = null,
             Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null,
             string? includeProperties = null,
             bool isTracking = true);
-        public T FirstOrDefault(
+        public Task<T> FirstOrDefaultAsync(
             Expression<Func<T, bool>>? filter = null,
             string? inclideProperties = null,
             bool isTracking = true

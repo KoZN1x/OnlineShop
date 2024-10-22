@@ -22,11 +22,11 @@ namespace OnlineShopOfSportEquipment.Controllers
         }
 
 
-        public IActionResult Index()
+        public async Task<IActionResult> IndexAsync()
         {
             var orderListViewModel = new OrderListViewModel()
             {
-                OrderHeaderList = _orderHeaderService.GetAll(),
+                OrderHeaderList = await _orderHeaderService.GetAllAsync(),
                 StatusList = WC.StatusList.ToList().Select(x => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
                 {
                     Text = x,
@@ -36,47 +36,47 @@ namespace OnlineShopOfSportEquipment.Controllers
             return View(orderListViewModel);
         }
 
-        public ActionResult Details(int Id)
+        public async Task<ActionResult> DetailsAsync(int Id)
         {
             orderViewModel = new OrderViewModel()
             {
-                OrderHeader = _orderHeaderService.FirstOrDefault(x => x.Id == Id),
-                OrderDetail = _orderDetailService.GetAll(x => x.OrderHeaderId == Id, includeProperties: "Product")
+                OrderHeader = await _orderHeaderService.FirstOrDefaultAsync(x => x.Id == Id),
+                OrderDetail = await _orderDetailService.GetAllAsync(x => x.OrderHeaderId == Id, includeProperties: "Product")
             };
             return View(orderViewModel);
         }
 
         [HttpPost]
-        public async Task<IActionResult> StartProcessing()
+        public async Task<IActionResult> StartProcessingAsync()
         {
-            var orderHeader = _orderHeaderService.FirstOrDefault(x => x.Id == orderViewModel!.OrderHeader!.Id);
+            var orderHeader = await _orderHeaderService.FirstOrDefaultAsync(x => x.Id == orderViewModel!.OrderHeader!.Id);
             orderHeader.OrderStatus = WC.StatusProcessing;
             await _orderHeaderService.SaveAsync();
             return RedirectToAction(nameof(Index));
         }
 
         [HttpPost]
-        public async Task<IActionResult> CompleteOrder()
+        public async Task<IActionResult> CompleteOrderAsync()
         {
-            var orderHeader = _orderHeaderService.FirstOrDefault(x => x.Id == orderViewModel!.OrderHeader!.Id);
+            var orderHeader = await _orderHeaderService.FirstOrDefaultAsync(x => x.Id == orderViewModel!.OrderHeader!.Id);
             orderHeader.OrderStatus = WC.StatusCompleted;
             await _orderHeaderService.SaveAsync();
             return RedirectToAction(nameof(Index));
         }
 
         [HttpPost]
-        public async Task<IActionResult> RemoveOrder()
+        public async Task<IActionResult> RemoveOrderAsync()
         {
-            var orderHeader = _orderHeaderService.FirstOrDefault(x => x.Id == orderViewModel!.OrderHeader!.Id);
+            var orderHeader = await _orderHeaderService.FirstOrDefaultAsync(x => x.Id == orderViewModel!.OrderHeader!.Id);
             _orderHeaderService.Remove(orderHeader);
             await _orderHeaderService.SaveAsync();
             return RedirectToAction(nameof(Index));
         }
 
         [HttpPost]
-        public async Task<IActionResult> UpdateOrderDetails()
+        public async Task<IActionResult> UpdateOrderDetailsAsync()
         {
-            var orderHeaderFromDb = _orderHeaderService.FirstOrDefault(x => x.Id == orderViewModel!.OrderHeader!.Id);
+            var orderHeaderFromDb = await _orderHeaderService.FirstOrDefaultAsync(x => x.Id == orderViewModel!.OrderHeader!.Id);
             orderHeaderFromDb.FullName = orderViewModel!.OrderHeader!.FullName;
             orderHeaderFromDb.PhoneNumber = orderViewModel!.OrderHeader!.PhoneNumber;
             orderHeaderFromDb.Address = orderViewModel!.OrderHeader!.Address;
