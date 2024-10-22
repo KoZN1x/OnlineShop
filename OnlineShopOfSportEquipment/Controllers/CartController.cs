@@ -29,7 +29,7 @@ namespace OnlineShopOfSportEquipment.Controllers
             _orderHeaderService = orderHeaderService;
         }
 
-        public async Task<IActionResult> IndexAsync()
+        public async Task<IActionResult> Index()
         {
             var shoppingCartList = new List<ShoppingCart>();
             if (HttpContext.Session.Get<IEnumerable<ShoppingCart>>(WC.SessionCart) != null
@@ -60,10 +60,10 @@ namespace OnlineShopOfSportEquipment.Controllers
                 shoppingCartList.Add(new ShoppingCart() { ProductId = product.Id, ProductCount = product.TempCount });
             }
             HttpContext.Session.Set(WC.SessionCart, shoppingCartList);
-            return RedirectToAction(nameof(SummaryAsync));
+            return RedirectToAction(nameof(Summary));
         }
 
-        public async Task<IActionResult> SummaryAsync()
+        public async Task<IActionResult> Summary()
         {
             var claimsIdentity = (ClaimsIdentity?)User.Identity;
             var claim = claimsIdentity?.FindFirst(ClaimTypes.NameIdentifier);
@@ -95,7 +95,7 @@ namespace OnlineShopOfSportEquipment.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [ActionName("Summary")]
-        public async Task<IActionResult> SummaryPostAsync(ProductUserViewModel productUserViewModel)
+        public async Task<IActionResult> SummaryPost(ProductUserViewModel productUserViewModel)
         {
             var claimsIdentity = (ClaimsIdentity)User.Identity!;
             var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
@@ -143,10 +143,10 @@ namespace OnlineShopOfSportEquipment.Controllers
                 await _orderDetailService.AddAsync(orderDetail);
             }
             await _orderDetailService.SaveAsync();
-            return RedirectToAction(nameof(OrderConfirmationAsync), new { id = orderHeader.Id });
+            return RedirectToAction(nameof(OrderConfirmation), new { id = orderHeader.Id });
         }
 
-        public async Task<IActionResult> OrderConfirmationAsync(int id = 0)
+        public async Task<IActionResult> OrderConfirmation(int id = 0)
         {
             var orderHeader = await _orderHeaderService.FirstOrDefaultAsync(x => x.Id == id);
             HttpContext.Session.Clear();

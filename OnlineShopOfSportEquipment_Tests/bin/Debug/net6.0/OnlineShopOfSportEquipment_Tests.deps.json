@@ -2463,7 +2463,10 @@
           "Syncfusion.EJ2.AspNet.Core": "21.2.5"
         },
         "runtime": {
-          "OnlineShopOfSportEquipment.dll": {}
+          "OnlineShopOfSportEquipment.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "OnlineShopOfSportEquipment_Data/1.0.0": {
@@ -2480,7 +2483,10 @@
           "ServiceStack.Interfaces": "6.8.0"
         },
         "runtime": {
-          "OnlineShopOfSportEquipment_Data.dll": {}
+          "OnlineShopOfSportEquipment_Data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "OnlineShopOfSportEquipment_Models/1.0.0": {
@@ -2494,7 +2500,10 @@
           "NUnit": "3.13.3"
         },
         "runtime": {
-          "OnlineShopOfSportEquipment_Models.dll": {}
+          "OnlineShopOfSportEquipment_Models.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "OnlineShopOfSportEquipment_Utility/1.0.0": {
@@ -2508,7 +2517,10 @@
           "NUnit": "3.13.3"
         },
         "runtime": {
-          "OnlineShopOfSportEquipment_Utility.dll": {}
+          "OnlineShopOfSportEquipment_Utility.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
